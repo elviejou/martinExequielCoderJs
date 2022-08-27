@@ -1,4 +1,4 @@
-alert("Bienvenidos al programa de Docentes por Materia. \n El mismo muestra el nombre de la materia, \n alumno con la nota mas alta")
+alert("Bienvenidos al programa de Docentes por Materia. \n  \nEl mismo muestra el nombre de la materia, \nel nombre del alumno con la nota mas alta \ny la nota que sacó en el examen")
 let materiaAlumnos = prompt("Por favor seleccione la materia para ingresar la nota: \n 1 - MATEMÁTICA \n 2 - HISTORIA \n 3 - FISICA")
 let cantidadAlumnos = prompt("Ingrese la cantidad de Alumnos que desea evaluar")
 let mayorNotaAlumno = 0
