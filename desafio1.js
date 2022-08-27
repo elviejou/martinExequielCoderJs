@@ -18,32 +18,17 @@ while (materiaAlumnos == "1" || materiaAlumnos == "2" || materiaAlumnos == "3"){
                 nombreAlumnoMayorNota = nombreAlumno
             }
 
-           
+            materiaAlumnos = "0"
     }
-    // if (materiaAlumnos = 1){
-    //         materiaAlumnos = "Matemática"
-    //     }
-    //     else if (materiaAlumnos = 2){
-    //         materiaAlumnos = "Historia"
-    //     }
-    //     else if (materiaAlumnos = 3){
-    //         materiaAlumnos = "Física"
-    //     }
-
-        switch (materiaAlumnos) {
-            case "1":
-                materiaAlumnos = "Matemática"
-                break;
-            case "2":
-                materiaAlumnos = "Historia"
-                break;
-            case "3":
-                materiaAlumnos = "Física"
-              break;
-            default:
-                materiaAlumnos = "No especifico Materias"
-              break;
-          }
+    if (materiaAlumnos = 1){
+            materiaAlumnos = "Matemática"
+        }
+        else if (materiaAlumnos = 2){
+            materiaAlumnos = "Historia"
+        }
+        else if (materiaAlumnos = 3){
+            materiaAlumnos = "Física"
+        }
 
     alert(`La materia elegida es ${materiaAlumnos}. \n La nota mas alta es ${mayorNotaAlumno}. \n Corresponde al alumno ${nombreAlumnoMayorNota}`)    
 }
