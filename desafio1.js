@@ -3,7 +3,7 @@ let materiaAlumnos = prompt("Por favor seleccione la materia para ingresar la no
 let cantidadAlumnos = prompt("Ingrese la cantidad de Alumnos que desea evaluar")
 let mayorNotaAlumno = 0
 let nombreAlumnoMayorNota
-while (materiaAlumnos == "1" || materiaAlumnos == "2" || materiaAlumnos == 3 && cantidadAlumnos > "3"){
+while (materiaAlumnos == "1" || materiaAlumnos == "2" || materiaAlumnos == "3"){
 
     for (let i = cantidadAlumnos; i > 0; i--){ 
         let nombreAlumno = prompt("Ingrese el nombre del alumno")
@@ -29,7 +29,7 @@ while (materiaAlumnos == "1" || materiaAlumnos == "2" || materiaAlumnos == 3 && 
         else if (materiaAlumnos = 3){
             materiaAlumnos = "Física"
         }
-    alert(`La materia elegida es ${materiaAlumnos} La nota mas alta es ${mayorNotaAlumno} y corresponde al alumno ${nombreAlumnoMayorNota}`)    
+    alert(`La materia elegida es ${materiaAlumnos}. \n La nota mas alta es ${mayorNotaAlumno}. \n Corresponde al alumno ${nombreAlumnoMayorNota}`)    
 }
 
 
