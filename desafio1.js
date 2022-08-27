@@ -13,6 +13,11 @@ while (materiaAlumnos == "1" || materiaAlumnos == "2" || materiaAlumnos == 3 && 
                 mayorNotaAlumno = notaAlumno
                 nombreAlumnoMayorNota = nombreAlumno
             }
+            if ((nombreAlumno = nombreAlumnoMayorNota) && (notaAlumno > mayorNotaAlumno)){
+                mayorNotaAlumno = notaAlumno
+                nombreAlumnoMayorNota = nombreAlumno
+            }
+
             materiaAlumnos = "0"
     }
     if (materiaAlumnos = 1){
