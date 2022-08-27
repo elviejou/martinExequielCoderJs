@@ -1,4 +1,4 @@
-alert("Bienvenidos al programa de Docentes por Materia. \n  \nEl mismo muestra el nombre de la materia, \nel nombre del alumno con la nota mas alta \ny la nota que sacó en el examen")
+alert("Bienvenidos al programa para saber quien es el mas NERD. \n  \nEl mismo muestra el nombre de la materia, \nel nombre del alumno con la nota mas alta \ny la nota que sacó en el examen")
 let materiaAlumnos = prompt("Por favor seleccione la materia para ingresar la nota: \n 1 - MATEMÁTICA \n 2 - HISTORIA \n 3 - FISICA")
 let mayorNotaAlumno = 0
 let nombreAlumnoMayorNota
@@ -30,7 +30,7 @@ while (materiaAlumnos == "1" || materiaAlumnos == "2" || materiaAlumnos == "3"){
             materiaAlumnos = "Física"
         }
 
-    alert(`La materia elegida es ${materiaAlumnos}. \n La nota mas alta es ${mayorNotaAlumno}. \n Corresponde al alumno ${nombreAlumnoMayorNota}`)    
+    alert(`La materia elegida es ${materiaAlumnos}. \n La nota mas alta es ${mayorNotaAlumno}. \n Y el premio al mas NERD es para ${nombreAlumnoMayorNota}`)    
 }
 
 
