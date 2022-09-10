@@ -1,3 +1,15 @@
+//CLASE CONSTRUCTORA
+const elMasNerd [materiaAlumnos,cantidadDeNotas,nombreAlumno,notaAlumno];
+
+function incializar(){
+    let ingresarNotas = confirm("Desea ejecutal el programa El mas Nerd")
+        while(ingresarNotas){
+            
+        }
+
+
+}
+
 
 //FUNCION MATERIA ELEGIDA
 function materiaElegida(){  
