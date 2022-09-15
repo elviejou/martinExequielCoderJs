@@ -1,0 +1,8 @@
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:   auto auto auto auto auto auto auto auto auto auto auto auto;
+    grid-template-areas: "menu menu menu menu menu menu menu menu menu menu menu menu"
+                         "main main main main main main main main main main main main"
+                         "footer footer  footer footer footer footer footer footer  footer footer footer footer";
+  }

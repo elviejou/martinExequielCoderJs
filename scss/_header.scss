@@ -1,0 +1,73 @@
+/* MENU */
+
+
+.navbar {
+    grid-area: menu;
+    background-color: map-get($map: $paletas, $key: 'colorBeige');
+    display: flex;
+    width: auto;
+
+    .logo{
+        display: flex;
+        width: 293px;
+    }
+    
+    .nav-item{
+        justify-content: space-between;
+        margin: 10px;
+        font-size: 18px;
+
+    }
+    
+    .tienda {
+        display: flex;
+        margin: 20px;
+        align-items: map-get($map: $justificado, $key: 'centro');
+        justify-content: map-get($map: $justificado, $key: 'centro');
+        width: 150px;
+        height: 40px;
+        background: map-get($map: $paletas, $key: 'colorRojo');
+        border-radius: 5px;
+        font-size: 25px;
+    
+        &:hover{
+            transform: scale(1.1);
+            background-color: map-get($map: $paletas, $key: 'colorBlanco');
+        }
+
+        
+        a {
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+            color: map-get($map: $paletas, $key: 'colorBlanco');
+            
+            
+            &:hover{
+                transform: scale(1.1);
+                color: map-get($map: $paletas, $key: 'colorRojo');
+            }    
+            
+        }  
+    }
+  
+}
+.breadcrumb{
+    display: flex;
+    justify-content: end;
+
+
+    li a{
+        text-decoration: none;
+        list-style: none;
+
+    }
+
+}
+    
+
+
+  
+   
+ 
+  

@@ -3,15 +3,243 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="libreria,agendas, mooving, lapiz, lapices, cuaderno, boligrafo, birome, resma, lapicera, regaleria, regla, distribuidora, mayorista, repuesto, block, tijera, rivadavia, exito, avon, filgo, mooving">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <script src="./desafio3.js"></script>
-    <title>Desafio 3 / Programa para Visualizar/Ingresar/Buscar Notas!!</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- LINK EFECTOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ruda&display=swap" rel="stylesheet" />
+    <!-- LINK BOOSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- LINK FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <title>Franpapel SRL - Mayorista en Librería</title>
 </head>
-<header>
-    <h1 class="titulo">Desafio 3 / Programa para Visualizar/Ingresar/Buscar Notas!!</h1>
-</header>
 <body>
-    
+    <!-- MENU -->
+    <nav class="navbar sticky-top navbar-expand-lg bg-light" style="background-color: beige !important;">
+        <section class="container-fluid">
+            <!-- LOGO -->
+          <a class="navbar-brand col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2" href="./index.html"><img src="./assets/img/logo.png" alt="distribuidora mayorista de libreria" class="img-fluid"> </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <section class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <!-- LINK NOSOTROS-->
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./pages/nosotros.html">NOSOTROS</a>
+                </li>
+                <!-- LINK CAMBIO DE PRECIOS-->
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/precios.html">PRECIOS</a>
+                </li>
+                <!-- LINK LOGIN-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    LOGIN
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="./pages/login.html">INGRESAR</a></li>
+                    <li><hr class="dropdown-sectionider"></li>
+                    <li><a class="dropdown-item" href="./pages/registro.html">REGISTRARSE</a></li>
+                    </ul>
+                </li> 
+            </ul>
+            <!-- LINK TIENDA-->  
+            <section class="tienda justify-content-center align-content-center">
+                <a href="./pages/tienda.html">TIENDA</a>
+            </section> 
+          </section>
+        </section>
+      </nav>
+ 
+    <main class="main container-fluid">
+        <!-- SECCION BANNER -->
+        <section id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <section class="carousel-inner">
+              <section class="carousel-item active" data-bs-interval="3000">
+                <a href="./pages/tienda.html"><img src="./assets/img/dia-del-nino-tapimovil-vertice-plow-ruibal-toyco.svg" class="d-block w-100" alt="" ></a>
+              </section>
+              <section class="carousel-item" data-bs-interval="3000">
+                <a href="./pages/tienda.html"><img src="./assets/img/agendas-2023-onix-mooving-nivel10-onix.svg" class="d-block w-100" alt=""></a>
+              </section>
+              <section class="carousel-item" data-bs-interval="3000">
+                <a href="./pages/tienda.html"><img src="./assets/img/preventa-agendas-mooving-2023.svg" class="d-block w-100" alt=""></a>
+              </section>
+            </section>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true" background-color="red"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+          </section>
+         
+        <!-- SECCION SERVICIOS -->
+        <section class="mainServicios">
+            <section class="row justify-content-between text-center">
+                <section class="servicioEnvios col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <img src="./assets/img/delivery.svg" class="envioImg">
+                    <h3 class="">Envíos a todo el País</h3>
+                    <small>Sin Cargo en CABA y GBA</small>
+                </section>
+                <section class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <img src="./assets/img/descuento.svg" >
+                    <h3>Precios Especiales</h3>
+                    <small>El mayor surtido</small>
+                    <small>al mejor precio</small>
+                </section>
+                <section class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <img src="./assets/img/atenci.svg" >
+                    <h3>Contactanos</h3>
+                    <small>Tenemos los mejores</small>
+                    <small>Asesores del Rubro</small>
+                </section>
+                <section class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <img src="./assets/img/marcas.svg" >
+                    <h3>Marcas</h3>
+                    <small>Todas las Marca</small>
+                </section>
+            </section>
+        </section>
+       
+        <!-- SECCION MARCAS -->
+        <section class="mainMarcas">
+            <section class="marcasBoton">
+                <section class="marcasTitulo">
+                    <H4>MARCAS</H4>
+                </section>
+            </section>
+            <section class="marcasCarrousel row justify-content-between text-center">
+                <a href="#" class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2"><img src="./assets/img/ledesmaMarca.svg" class="img-fluid" alt="avon"></a>
+                <a href="#" class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2"><img src="./assets/img/acrilexMarca.svg" class="img-fluid" alt="kimeleka"></a> 
+                <a href="#" class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2"><img src="./assets/img/exitoMarca.svg" class="img-fluid" alt="exito"></a> 
+                <a href="#" class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2"><img src="./assets/img/cariocaMarca.svg" class="img-fluid" alt="carioca"></a> 
+                <a href="#" class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2"><img src="./assets/img/filgoMarca.svg" class="img-fluid" alt="filgo"></a> 
+                <a href="#" class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2"><img src="./assets/img/estradaMarca.svg" class="img-fluid" alt="rivadavia"></a>                                   
+            </section>
+        </section>    
+        
+        <!-- SECCION ULTIMOS INGRESOS -->
+        <section class="mainUltimosIngresos">
+            <section class="ultimosBoton">
+                <section class="ultimosTitulo">
+                    <H4>ULTIMOS INGRESOS</H4>
+                </section>
+            </section>          
+            <section class="ultimosIngresos row justify-content-between text-center">  
+
+                                 <!-- CONTENEDOR DE PRODUCTOS -->
+                                <div class= "tarjeta2 col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                                    <img src="./assets/img/agenda-mooving-15x21-semanal-black-1404145.jpg" alt="">
+                                    <a href="./pages/tienda.html"><h5>AGENDA MOOVING 15X21 BLACK</h5></a>
+                                    <span>$3.295,83 IVA inc*</span>
+                                    <small>cod: 1819862</small>
+                                </div> 
+                                <!-- CONTENEDOR DE PRODUCTOS -->
+                                <div class= "tarjeta2 col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                                    <img src="./assets/img/agenda-mooving-14x20-2dxp-harry-potter-diaria-1404222.jpg" alt="">
+                                    <a href="./pages/tienda.html"><h5>AGENDA MOOVING 14X20 HARRY POTTER</h5></a>
+                                    <span> $3.068,53 IVA inc*</span>
+                                    <small>cod: 1819854</small>
+                                </div> 
+                                <!-- CONTENEDOR DE PRODUCTOS -->
+                                <div class= "tarjeta2 col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                                    <img src="./assets/img/agenda-mooving-14x20-2dxp-mickey-2d-x-pagina-1404121.jpg" alt="">
+                                    <a href="./pages/tienda.html"><h5>AGENDA MOOVING 14X20 MICKEY</h5></a>
+                                    <span>$2.841,23 IVA inc*</span>
+                                    <small>cod: 1819864</small>
+                                </div> 
+                                <!-- CONTENEDOR DE PRODUCTOS -->
+                                <div class= "tarjeta2 col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                                    <img src="./assets/img/agenda-mooving-14x20-2dxp-minnie-2d-x-pagina-1404131.jpg" alt="">
+                                    <a href="./pages/tienda.html"><h5>AGENDA MOOVING 14X20 2DXP MINNIE</h5></a>
+                                    <span>$1818,38 IVA inc*</span>
+                                    <small>cod: 1819866</small>
+                                </div> 
+                                <!-- CONTENEDOR DE PRODUCTOS -->
+                                <div class= "tarjeta2 col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                                    <img src="./assets/img/agenda-mooving-15x21-semanal-coloring-lettering-1404151.jpg" alt="">
+                                    <a href="./pages/tienda.html"><h5>AGENDA MOOVING 15X21 LETTERING</h5></a>
+                                    <span>$2045,68 IVA inc*</span>
+                                    <small>cod: 1819865</small>
+                                </div> 
+                                <!-- CONTENEDOR DE PRODUCTOS -->
+                                <div class= "tarjeta2 col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                                    <img src="./assets/img/agenda-mooving-man-15x21-diaria-1405129.jpg" alt="">
+                                    <a href="./pages/tienda.html"><h5>AGENDA MOOVING MAN 15X21 DIARIA</h5></a>
+                                    <span>$2272,98 IVA inc*</span>
+                                    <small>cod: 1819871</small>
+                                </div> 
+                            </section>  
+                    </section> 
+            </section>   
+            </section>  
+        </section>          
+        
+        <!-- SECCION UBICACION -->
+        <section class="mainUbicacion" >
+            <section class="ubicacionBoton"> 
+                <section class="ubicacionTexto">
+                    <H4>UBICACIÓN</H4> 
+                </section>
+            </section>
+            <section class="ubicacionMapa"> 
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7816.266761048635!2d-58.517662879873114!3d-34.54506365023456!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1fd57e9a21f894c9!2sFRANPAPEL+-+Librer%C3%ADa+Mayorista!5e0!3m2!1sen!2sar!4v1539886785942" class="map" ></iframe>
+            </section>
+        </section>
+
+        <!-- SECCION FORMULARIO CONTACTO -->
+        <section class="mainContacto" id="contacto" >
+            <section class="contact-form">
+                <form method="post">
+                    <h3>CONTACTO</h3>
+                <section class="row justify-content-between">
+                        <section class="col-md-6">
+                            <section class="form-group">
+                                <input type="text" name="nombreContacto" class="form-control" placeholder="Nombre y Apellido *" value="" />
+                            </section>
+                            <section class="form-group">
+                                <input type="text" name="emailContacto" class="form-control" placeholder="Email *" value="" />
+                            </section>
+                            <section class="form-group">
+                                <input type="text" name="telefonoContacto" class="form-control" placeholder="Telefono *" value="" />
+                            </section>
+                            <section class="form-group">
+                                <input type="submit" name="botonContacto" class="btnContact" value="Enviar" />
+                            </section>
+                        </section>
+                        <section class="col-md-6">
+                            <section class="form-group">
+                                <textarea name="mensajeContacto" class="form-control" placeholder="Mensaje *" style="width: 100%; height: 150px;"></textarea>
+                            </section>
+                        </section>
+                    </section>
+                </form>
+            </section>
+        </section>
+    </main>    
+    <!-- SECCION FOOTER -->    
+    <footer class="footer container-fluid">
+        <section class="footerContenedor">
+            <span>© Copyright 2022 FRANPAPEL SRL - Todos los derechos reservados</span>
+            <div>
+                <i class="fa-brands fa-facebook" style="color: red;"></i>
+                <i class="fa-brands fa-instagram" style="color: red;"></i>
+            </div>
+        </section>
+    </footer>   
+    <!-- BOOSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!-- ANIMACION JS -->  
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    <script>
+        AOS.init();
+    </script>
+    <script src="./primeraEntregarProyecto.js"></script>
 </body>
 </html>

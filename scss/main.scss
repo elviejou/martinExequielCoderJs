@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: auto;
+}
+@import "variables";
+@import "header";
+@import "mainBanner";
+@import "mainServicios";
+@import "mainMarcas";
+@import "mainUltimosIngresos";
+@import "mainUbicacion";
+@import "mainContacto";
+@import "contenedor";
+@import "footer";
+@import "nosotrosPagina";
+@import "preciosPagina";
+@import "loginPagina";
+@import "tiendaPagina";
+@import "tiendaProductos";
+@import "mixins";
+
+
+

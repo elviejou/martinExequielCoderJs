@@ -1,0 +1,26 @@
+/* CAMBIO DE PRECIOS*/
+
+
+.main{
+h1{
+  text-align: center;
+  color: $colorRojo;
+}
+
+.cambioDePrecios{
+  margin: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: justify;
+  margin: 15px;
+
+
+  .aumentosConetnedor{
+
+        margin: 20px;        
+
+      }
+}
+}

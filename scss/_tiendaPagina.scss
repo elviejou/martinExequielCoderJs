@@ -1,0 +1,124 @@
+/* PAGINA TIENDA */
+
+.paginaTienda{
+
+
+  .menuTienda{
+
+
+    .tituloTienda{
+      text-align: center;
+      background-color: $colorRojoClaro;
+    }
+    
+    
+    /* MENU DESPEGABLE */
+    .categoriasYfiltros {
+      display: flex;
+      flex-direction: column;
+      margin-left: 50px;
+      width: 200px;
+      font-size: 18px;
+
+      ul li {
+        text-decoration: none;
+        list-style: none;
+        text-decoration: none;
+
+
+        &:hover {
+          color: $colorBlanco;
+          background-color: $colorRojo;
+          border-radius: 3px;
+        }
+      }
+    }
+    
+  }
+  .shop{
+      margin: 30px;
+      width: auto;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+
+      /* CONTENEDOR PRODUCTOS*/
+    .contenedorProductos { 
+      width:230px;
+      height:450px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      box-shadow: 1px 1px 12px 0 rgba(0,0,0,0.2);
+      margin: 10px;
+
+      img { 
+        display: flex;
+        width: auto;
+        height: 280px;
+        justify-content: center;
+        align-content: center;
+
+
+        &:hover{
+          transform: scale(1.2);
+        }
+    
+      }
+
+
+      .nombreProductos { 
+        color:rgba(25.000000409781933, 25.000000409781933, 29.000000171363354, 1);
+        width:227px;
+        text-align:center;
+        font-size:20px;
+         a{
+          text-decoration: none;
+         }
+      }
+
+
+      .precioProductos { 
+        color: $colorRojo;
+        width:227px;
+        text-align:center;
+        font-size: 20px;
+      }
+
+
+      .codigoProductos { 
+        color:$colorNegro;
+        width:227px;
+        height:21px;
+        text-align:center;
+        font-size:14px;
+    
+      }
+      .agregarAlCarrito{
+          width:227px;
+          height:21px;
+          text-align:center;
+        }
+
+
+      .botonAgregar{
+          background-color:$colorRojo;
+          color: $colorBlanco;
+          width: 150px;;
+          height:28px;
+      }
+
+
+      .agregarCantidad { 
+      
+          width:80px;
+          margin-top:5px;
+          height:28px;
+      }
+
+
+    }
+  }
+}    

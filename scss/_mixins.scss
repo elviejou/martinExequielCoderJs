@@ -1,0 +1,31 @@
+@mixin tarjetasGrandes {
+    :hover{
+    -webkit-filter: grayscale(1);
+    background-color: transparent;
+    background-blend-mode: luminosity;
+
+    }
+}
+
+.ultimosIngresos{
+@include tarjetasGrandes;
+}
+
+.marcasCarrousel{
+    @include tarjetasGrandes;
+}
+        
+@mixin btnMenu {
+    :hover{
+        background-color: $colorRojo;
+        border-radius: 10px;
+        color: $colorBlanco !important;
+    }
+  
+} 
+
+.nav-item {
+    @include btnMenu
+}
+
+

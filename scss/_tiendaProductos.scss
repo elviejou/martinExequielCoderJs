@@ -1,0 +1,23 @@
+.tarjeta2{
+    @extend .contenedorProductos;
+    > h5 {
+        @extend .nombreProductos;
+    }
+    > span {
+        @extend .precioProductos;
+    }
+    > small {
+        @extend .codigoProductos;
+    }
+    > small {
+        @extend .codigoProductos;
+    }
+    input {
+         @extend .agregarCantidad;
+         @extend .agregarCantidad;
+         @extend .botonAgregar;
+
+    }
+ 
+   
+}
