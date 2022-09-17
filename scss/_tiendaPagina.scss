@@ -1,4 +1,27 @@
 /* PAGINA TIENDA */
+.buscadorProductos{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+
+  #textoBuscar{
+    display: flex;
+    height: 40px;
+    width: 400px;
+  }
+
+
+  #botonBuscar{
+    display: flex;
+    background-color: $colorRojo;
+    color: $colorBlanco;
+    font-size: 18px;
+  }
+
+}
+
+
 
 .paginaTienda{
 
@@ -41,18 +64,22 @@
       display: flex;
       justify-content: space-between;
       flex-direction: row;
-      flex-wrap: wrap;
 
 
       /* CONTENEDOR PRODUCTOS*/
+    .tarjetas{
+      display: flex;
+      flex-wrap: wrap;
+    
+      
     .contenedorProductos { 
       width:230px;
-      height:450px;
       display: flex;
       flex-direction: column;
       text-align: center;
       box-shadow: 1px 1px 12px 0 rgba(0,0,0,0.2);
       margin: 10px;
+      padding: 10px;
 
       img { 
         display: flex;
@@ -118,7 +145,7 @@
           height:28px;
       }
 
-
+    }
     }
   }
 }    

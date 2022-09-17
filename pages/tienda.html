@@ -17,6 +17,7 @@
     <title>Tienda de Libreria - Franpapel</title>
 </head>
 <body class="container-fluid justify-content-between">
+  
     <!-- MENU -->
     <nav class="navbar sticky-top navbar-expand-lg bg-light" style="background-color: beige !important;">
       <section class="container-fluid">
@@ -46,6 +47,15 @@
                   <li><a class="dropdown-item" href="./registro.html">REGISTRARSE</a></li>
                   </ul>
               </li> 
+              
+              </li>
+              </div>
+              </div>
+              <div class="buscadorProductos">
+                <input type="text" id="textoBuscar" class="form-control">
+                <button class="btn btn-info" id="botonBuscar">Buscar</button>
+              </div>
+              <li class="nav-item">
           </ul>
           <!-- LINK TIENDA-->  
           <section class="tienda justify-content-center align-content-center">
@@ -66,7 +76,7 @@
             <nav class="navbar bg-light fixed-left  sticky-top " style="background-color: white !important;">
 
               <div class="container-fluid justify-content-start">
-                <a class="navbar-brand" href="#">Filtros y Categorias</a>
+                <a class="navbar-brand" href="#">Busqueda - Filtros y Categorias</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -76,10 +86,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                   </div>
                   <div class="offcanvas-body">
-                    <form class="d-flex" role="search">
-                      <input class="form-control me-2" type="search" placeholder="Buscar Productos" aria-label="Search">
-                      <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    </form>
+
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                       <!-- CATEGORIA 1 -->
                       <li class="nav-item dropdown">
@@ -87,12 +94,12 @@
                           Escolar
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                          <li><a class="dropdown-item" href="#">Adhesivos</a></li>
-                          <li><a class="dropdown-item" href="#">Carpetas</a></li>
-                          <li><a class="dropdown-item" href="#">Cartucheras</a></li>
-                          <li><a class="dropdown-item" href="#">Lapices</a></li>
-                          <li><a class="dropdown-item" href="#">Marcadores</a></li>
-                          <li><a class="dropdown-item" href="#">Papeles</a></li>
+                          <li><a class="dropdown-item" id="agendas" href="#">Agendas</a></li>
+                          <li><a class="dropdown-item" id="agendasDisney" href="#">Agendas Disney</a></li>
+                          <li><a class="dropdown-item" id="lapizNegro" href="#">Lapices Negros</a></li>
+                          <li><a class="dropdown-item" id="lapizColor" href="#">Lapices de Color</a></li>
+                          <li><a class="dropdown-item" id="crayones" href="#">Crayones</a></li>
+                          <li><a class="dropdown-item" id="marcadores" href="#">Marcadores</a></li>
                           <li>
                             <hr class="dropdown-divider">
                           </li>
@@ -100,7 +107,7 @@
                         </ul>
                       </li>
                       <!-- CATEGORIA 2 -->
-                      <li class="nav-item dropdown">
+                      <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Comercial
                         </a>
@@ -116,9 +123,9 @@
                           </li>
                           <li><a class="dropdown-item" href="#">Mas....</a></li>
                         </ul>
-                      </li>
+                      </li> -->
                       <!-- CATEGORIA 3 -->
-                      <li class="nav-item dropdown">
+                      <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Técninca
                         </a>
@@ -134,9 +141,9 @@
                           </li>
                           <li><a class="dropdown-item" href="#">Mas....</a></li>
                         </ul>
-                      </li>
+                      </li> -->
                       <!-- CATEGORIA 4 -->
-                      <li class="nav-item dropdown">
+                      <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Informática
                         </a>
@@ -152,9 +159,9 @@
                           </li>
                           <li><a class="dropdown-item" href="#">Mas....</a></li>
                         </ul>
-                      </li>
+                      </li> -->
                       <!-- CATEGORIA 5 -->
-                      <li class="nav-item dropdown">
+                      <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Regalería
                         </a>
@@ -170,7 +177,7 @@
                           </li>
                           <li><a class="dropdown-item" href="#">Mas....</a></li>
                         </ul>
-                      </li>
+                      </li> -->
                       
                     </ul>
                     
@@ -185,149 +192,20 @@
               </ol>
             </nav>
           </Section>
-            <section class="shop">
+            <div class="shop">
                 <!-- CONTENEDOR DE PRODUCTOS -->
-                <div class= "tarjeta2 col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
-                  <img src="../assets/img/agenda-mooving-15x21-semanal-black-1404145.jpg" alt="">
-                  <h5>AGENDA MOOVING 15X21 BLACK</h5>
-                  <span>$3.295,83 IVA inc*</span>
-                  <small>cod: 1819862</small>
-                  <div>
-                  <input type="number" value="1"> <input type="button" value="Agregar">
-                  </div>      
-                </div> 
-                <!-- CONTENEDOR DE PRODUCTOS -->
-                <div class= "tarjeta2 col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
-                  <img src="../assets/img/agenda-mooving-14x20-2dxp-harry-potter-diaria-1404222.jpg" alt="">
-                  <h5>AGENDA MOOVING 14X20 HARRY POTTER</h5>
-                  <span> $3.068,53 IVA inc*</span>
-                  <small>cod: 1819854</small>
-                  <div>
-                  <input type="number" value="1"> <input type="button" value="Agregar">
-                  </div>      
-                </div> 
-                <!-- CONTENEDOR DE PRODUCTOS -->
-                <div class= "tarjeta2 col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
-                  <img src="../assets/img/agenda-mooving-14x20-2dxp-mickey-2d-x-pagina-1404121.jpg" alt="">
-                  <h5>AGENDA MOOVING 14X20 MICKEY</h5>
-                  <span>$2.841,23 IVA inc*</span>
-                  <small>cod: 1819864</small>
-                  <div>
-                  <input type="number" value="1"> <input type="button" value="Agregar">
-                  </div>      
-                </div> 
-                <!-- CONTENEDOR DE PRODUCTOS -->
-                <div class= "tarjeta2 col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
-                  <img src="../assets/img/agenda-mooving-14x20-2dxp-minnie-2d-x-pagina-1404131.jpg" alt="">
-                  <h5>AGENDA MOOVING 14X20 2DXP MINNIE</h5>
-                  <span>$1818,38 IVA inc*</span>
-                  <small>cod: 1819866</small>
-                  <div>
-                  <input type="number" value="1"> <input type="button" value="Agregar">
-                  </div>      
-                </div> 
-                <!-- CONTENEDOR DE PRODUCTOS -->
-                <div class= "tarjeta2 col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
-                  <img src="../assets/img/agenda-mooving-15x21-semanal-coloring-lettering-1404151.jpg" alt="">
-                  <h5>AGENDA MOOVING 15X21 LETTERING</h5>
-                  <span>$2045,68 IVA inc*</span>
-                  <small>cod: 1819865</small>
-                  <div>
-                  <input type="number" value="1"> <input type="button" value="Agregar">
-                  </div>      
-                </div> 
-                <!-- CONTENEDOR DE PRODUCTOS -->
-                <div class= "tarjeta2 col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
-                  <img src="../assets/img/agenda-mooving-man-15x21-diaria-1405129.jpg" alt="">
-                  <h5>AGENDA MOOVING MAN 15X21 DIARIA</h5>
-                  <span>$2272,98 IVA inc*</span>
-                  <small>cod: 1819871</small>
-                  <div>
-                  <input type="number" value="1"> <input type="button" value="Agregar">
-                  </div>      
-                </div> 
-                <!-- CONTENEDOR DE PRODUCTOS -->
-                <div class= "tarjeta2 col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
-                  <img src="../assets/img/agenda-mooving-16x22-diaria-beauty-1417134.jpg" alt="">
-                  <h5>AGENDA MOOVING 16X22 BEAUTY</h5>
-                  <span>$4205,02 IVA inc*</span>
-                  <small>cod: 1819844</small>
-                  <div>
-                  <input type="number" value="1"> <input type="button" value="Agregar">
-                  </div>      
-                </div> 
-                <!-- CONTENEDOR DE PRODUCTOS -->
-                <div class= "tarjeta2 col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
-                  <img src="../assets/img/agenda-mooving-14x20-diaria-disney-100-aniversario-1418118.jpg" alt="">
-                  <h5>AGENDA MOOVING 14X20 DISNEY 100 AÑOS</h5>
-                  <span>$4534,60 IVA inc*</span>
-                  <small>cod: 1819867</small>
-                  <div>
-                  <input type="number" value="1"> <input type="button" value="Agregar">
-                  </div>      
-                </div> 
-                <!-- CONTENEDOR DE PRODUCTOS -->
-                <div class= "tarjeta2 col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
-                  <img src="../assets/img/marcador-maped-pastel-x-10.jpg" alt="">
-                  <h5>MARCADOR MAPED PASTEL X 10</h5>
-                  <span>$527,42 IVA inc*</span>
-                  <small>cod: 1284004</small>
-                  <div>
-                  <input type="number" value="1"> <input type="button" value="Agregar">
-                  </div>      
-                </div>                                                                                 
-                <!-- CONTENEDOR DE PRODUCTOS -->
-                <div class= "tarjeta2 col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
-                  <img src="../assets/img/lapiz-color-maped-x12-largo-pastel.jpg" alt="">
-                  <h5>LAPIZ COLOR MAPED  X12 PASTEL</h5>
-                  <span>$479,72 IVA inc*</span>
-                  <small>cod: 1285008</small>
-                  <div>
-                  <input type="number" value="1"> <input type="button" value="Agregar">
-                  </div>      
-                </div> 
-                <!-- CONTENEDOR DE PRODUCTOS -->
-                <div class= "tarjeta2 col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
-                  <img src="../assets/img/lapiz-color-maped-gel-x-12.jpg" alt="">
-                  <h5>LAPIZ COLOR MAPED GEL X 12</h5>
-                  <span>$1439,12 IVA inc*</span>
-                  <small>cod: 1285033</small>
-                  <div>
-                  <input type="number" value="1"> <input type="button" value="Agregar">
-                  </div>      
-                </div> 
-                <!-- CONTENEDOR DE PRODUCTOS -->
-                <div class= "tarjeta2 col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
-                  <img src="../assets/img/lapiz-negro-maped-sin-goma-tubo-x-72.jpg" alt="">
-                  <h5>LAPIZ NEGRO MAPED TUBO X 72</h5>
-                  <span>$1989,91 IVA inc*</span>
-                  <small>cod: 1285108</small>
-                  <div>
-                  <input type="number" value="1"> <input type="button" value="Agregar">
-                  </div>      
-                </div> 
-                <!-- CONTENEDOR DE PRODUCTOS -->
-                <div class= "tarjeta2 col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
-                  <img src="../assets/img/lapiz-color-filgo-supersoft-24.jpg" alt="">
-                  <h5>LAPIZ COLOR FILGO SUPERSOFT X 24</h5>
-                  <span>$1628.99 IVA inc*</span>
-                  <small>cod: 3071129</small>
-                  <div>
-                  <input type="number" value="1"> <input type="button" value="Agregar">
-                  </div>      
-                </div> 
-                <!-- CONTENEDOR DE PRODUCTOS -->
-                <div class= "tarjeta2 col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
-                  <img src="../assets/img/marcador-maped-punta-pincel-x10.jpg" alt="">
-                  <h5>MARCADOR MAPED PUNTA PINCEL  X10</h5>
-                  <span>$955.10 IVA inc*</span>
-                  <small>cod: 1284024</small>
-                  <div>
-                  <input type="number" value="1"> <input type="button" value="Agregar">
-                  </div>      
-                </div>                                                                 
-              
-            </section> 
+                <div id="productosLibreria" class="tarjetas" ></div> 
+            </div> 
+            <section>
+              <form>CARGAR NUEVO PRODUCTO<br>
+                <input type="text" id="descripcionNueva" name="descripcion" placeholder="Nombre"><br>
+                <input type="text" id="codigoNuevo" name="Codigo" placeholder="Codigo" ><br>
+                <input type="text" id="precioNuevo" name="Precio" placeholder="Precio"><br>
+                <input type="text" id="imagenNueva" name="Imegen" placeholder="Imagen"><br>
+                <input type="text" id="categoriaNueva" name="Categoria" placeholder="Categoria"><br>
+                <button id="cargarProducto">Guardar Producto</button>
+            </form>
+            </section>
       </section>  
     </main>
         <!-- SECCION FOOTER -->    
@@ -340,6 +218,7 @@
               </div>
           </section>
       </footer>   
+      
       <!-- BOOSTRAP -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
       <!-- ANIMACION JS -->  
@@ -347,6 +226,7 @@
       <script>
           AOS.init();
       </script>
+      <script src="../main.js"></script>
   </body>
 </body>
 </html>

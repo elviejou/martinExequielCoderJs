@@ -1,4 +1,8 @@
+.shop{
+
+}
 .tarjeta2{
+    
     @extend .contenedorProductos;
     > h5 {
         @extend .nombreProductos;
@@ -21,3 +25,4 @@
  
    
 }
+

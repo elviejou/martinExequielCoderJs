@@ -230,6 +230,20 @@ footer {
 
 /* LOGIN*/
 /* PAGINA TIENDA */
+.buscadorProductos {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+  .buscadorProductos #textoBuscar {
+    display: flex;
+    height: 40px;
+    width: 400px; }
+  .buscadorProductos #botonBuscar {
+    display: flex;
+    background-color: red;
+    color: white;
+    font-size: 18px; }
+
 .paginaTienda .menuTienda {
   /* MENU DESPEGABLE */ }
   .paginaTienda .menuTienda .tituloTienda {
@@ -256,55 +270,57 @@ footer {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  flex-wrap: wrap;
   /* CONTENEDOR PRODUCTOS*/ }
-  .paginaTienda .shop .contenedorProductos, .paginaTienda .shop .tarjeta2 {
-    width: 230px;
-    height: 450px;
+  .paginaTienda .shop .tarjetas {
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    box-shadow: 1px 1px 12px 0 rgba(0, 0, 0, 0.2);
-    margin: 10px; }
-    .paginaTienda .shop .contenedorProductos img, .paginaTienda .shop .tarjeta2 img {
+    flex-wrap: wrap; }
+    .paginaTienda .shop .tarjetas .contenedorProductos, .paginaTienda .shop .tarjetas .tarjeta2 {
+      width: 230px;
       display: flex;
-      width: auto;
-      height: 280px;
-      justify-content: center;
-      align-content: center; }
-      .paginaTienda .shop .contenedorProductos img:hover, .paginaTienda .shop .tarjeta2 img:hover {
-        transform: scale(1.2); }
-    .paginaTienda .shop .contenedorProductos .nombreProductos, .paginaTienda .shop .tarjeta2 .nombreProductos, .paginaTienda .shop .contenedorProductos .tarjeta2 > h5, .paginaTienda .shop .tarjeta2 > h5 {
-      color: #19191d;
-      width: 227px;
+      flex-direction: column;
       text-align: center;
-      font-size: 20px; }
-      .paginaTienda .shop .contenedorProductos .nombreProductos a, .paginaTienda .shop .tarjeta2 .nombreProductos a, .paginaTienda .shop .contenedorProductos .tarjeta2 > h5 a, .paginaTienda .shop .tarjeta2 > h5 a {
-        text-decoration: none; }
-    .paginaTienda .shop .contenedorProductos .precioProductos, .paginaTienda .shop .tarjeta2 .precioProductos, .paginaTienda .shop .contenedorProductos .tarjeta2 > span, .paginaTienda .shop .tarjeta2 > span {
-      color: red;
-      width: 227px;
-      text-align: center;
-      font-size: 20px; }
-    .paginaTienda .shop .contenedorProductos .codigoProductos, .paginaTienda .shop .tarjeta2 .codigoProductos, .paginaTienda .shop .contenedorProductos .tarjeta2 > small, .paginaTienda .shop .tarjeta2 > small {
-      color: black;
-      width: 227px;
-      height: 21px;
-      text-align: center;
-      font-size: 14px; }
-    .paginaTienda .shop .contenedorProductos .agregarAlCarrito, .paginaTienda .shop .tarjeta2 .agregarAlCarrito {
-      width: 227px;
-      height: 21px;
-      text-align: center; }
-    .paginaTienda .shop .contenedorProductos .botonAgregar, .paginaTienda .shop .tarjeta2 .botonAgregar, .paginaTienda .shop .contenedorProductos .tarjeta2 input, .tarjeta2 .paginaTienda .shop .contenedorProductos input, .paginaTienda .shop .tarjeta2 input {
-      background-color: red;
-      color: white;
-      width: 150px;
-      height: 28px; }
-    .paginaTienda .shop .contenedorProductos .agregarCantidad, .paginaTienda .shop .tarjeta2 .agregarCantidad, .paginaTienda .shop .contenedorProductos .tarjeta2 input, .tarjeta2 .paginaTienda .shop .contenedorProductos input, .paginaTienda .shop .tarjeta2 input {
-      width: 80px;
-      margin-top: 5px;
-      height: 28px; }
+      box-shadow: 1px 1px 12px 0 rgba(0, 0, 0, 0.2);
+      margin: 10px;
+      padding: 10px; }
+      .paginaTienda .shop .tarjetas .contenedorProductos img, .paginaTienda .shop .tarjetas .tarjeta2 img {
+        display: flex;
+        width: auto;
+        height: 280px;
+        justify-content: center;
+        align-content: center; }
+        .paginaTienda .shop .tarjetas .contenedorProductos img:hover, .paginaTienda .shop .tarjetas .tarjeta2 img:hover {
+          transform: scale(1.2); }
+      .paginaTienda .shop .tarjetas .contenedorProductos .nombreProductos, .paginaTienda .shop .tarjetas .tarjeta2 .nombreProductos, .paginaTienda .shop .tarjetas .contenedorProductos .tarjeta2 > h5, .paginaTienda .shop .tarjetas .tarjeta2 > h5 {
+        color: #19191d;
+        width: 227px;
+        text-align: center;
+        font-size: 20px; }
+        .paginaTienda .shop .tarjetas .contenedorProductos .nombreProductos a, .paginaTienda .shop .tarjetas .tarjeta2 .nombreProductos a, .paginaTienda .shop .tarjetas .contenedorProductos .tarjeta2 > h5 a, .paginaTienda .shop .tarjetas .tarjeta2 > h5 a {
+          text-decoration: none; }
+      .paginaTienda .shop .tarjetas .contenedorProductos .precioProductos, .paginaTienda .shop .tarjetas .tarjeta2 .precioProductos, .paginaTienda .shop .tarjetas .contenedorProductos .tarjeta2 > span, .paginaTienda .shop .tarjetas .tarjeta2 > span {
+        color: red;
+        width: 227px;
+        text-align: center;
+        font-size: 20px; }
+      .paginaTienda .shop .tarjetas .contenedorProductos .codigoProductos, .paginaTienda .shop .tarjetas .tarjeta2 .codigoProductos, .paginaTienda .shop .tarjetas .contenedorProductos .tarjeta2 > small, .paginaTienda .shop .tarjetas .tarjeta2 > small {
+        color: black;
+        width: 227px;
+        height: 21px;
+        text-align: center;
+        font-size: 14px; }
+      .paginaTienda .shop .tarjetas .contenedorProductos .agregarAlCarrito, .paginaTienda .shop .tarjetas .tarjeta2 .agregarAlCarrito {
+        width: 227px;
+        height: 21px;
+        text-align: center; }
+      .paginaTienda .shop .tarjetas .contenedorProductos .botonAgregar, .paginaTienda .shop .tarjetas .tarjeta2 .botonAgregar, .paginaTienda .shop .tarjetas .contenedorProductos .tarjeta2 input, .tarjeta2 .paginaTienda .shop .tarjetas .contenedorProductos input, .paginaTienda .shop .tarjetas .tarjeta2 input {
+        background-color: red;
+        color: white;
+        width: 150px;
+        height: 28px; }
+      .paginaTienda .shop .tarjetas .contenedorProductos .agregarCantidad, .paginaTienda .shop .tarjetas .tarjeta2 .agregarCantidad, .paginaTienda .shop .tarjetas .contenedorProductos .tarjeta2 input, .tarjeta2 .paginaTienda .shop .tarjetas .contenedorProductos input, .paginaTienda .shop .tarjetas .tarjeta2 input {
+        width: 80px;
+        margin-top: 5px;
+        height: 28px; }
 
 .ultimosIngresos :hover {
   -webkit-filter: grayscale(1);
