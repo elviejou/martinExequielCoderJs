@@ -20,9 +20,17 @@
   }
 
 }
+input {
+  width: 35px;
+}
+
+.btn-secondary{
 
 
-
+  background-color: $colorRojo !important;
+  color: $colorBlanco;
+  border-color: none;
+}
 .paginaTienda{
 
 
@@ -97,9 +105,10 @@
 
 
       .nombreProductos { 
+        display: flex;
+        justify-content: center;
         color:rgba(25.000000409781933, 25.000000409781933, 29.000000171363354, 1);
         width:227px;
-        text-align:center;
         font-size:20px;
          a{
           text-decoration: none;
@@ -144,6 +153,15 @@
           margin-top:5px;
           height:28px;
       }
+      .btn{
+
+
+        background-color: $colorRojo;
+        color: $colorBlanco;
+        border-color: $colorBlanco;
+      }
+
+
 
     }
     }

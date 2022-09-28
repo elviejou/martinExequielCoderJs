@@ -244,6 +244,14 @@ footer {
     color: white;
     font-size: 18px; }
 
+input {
+  width: 35px; }
+
+.btn-secondary {
+  background-color: red !important;
+  color: white;
+  border-color: none; }
+
 .paginaTienda .menuTienda {
   /* MENU DESPEGABLE */ }
   .paginaTienda .menuTienda .tituloTienda {
@@ -291,9 +299,10 @@ footer {
         .paginaTienda .shop .tarjetas .contenedorProductos img:hover, .paginaTienda .shop .tarjetas .tarjeta2 img:hover {
           transform: scale(1.2); }
       .paginaTienda .shop .tarjetas .contenedorProductos .nombreProductos, .paginaTienda .shop .tarjetas .tarjeta2 .nombreProductos, .paginaTienda .shop .tarjetas .contenedorProductos .tarjeta2 > h5, .paginaTienda .shop .tarjetas .tarjeta2 > h5 {
+        display: flex;
+        justify-content: center;
         color: #19191d;
         width: 227px;
-        text-align: center;
         font-size: 20px; }
         .paginaTienda .shop .tarjetas .contenedorProductos .nombreProductos a, .paginaTienda .shop .tarjetas .tarjeta2 .nombreProductos a, .paginaTienda .shop .tarjetas .contenedorProductos .tarjeta2 > h5 a, .paginaTienda .shop .tarjetas .tarjeta2 > h5 a {
           text-decoration: none; }
@@ -321,6 +330,10 @@ footer {
         width: 80px;
         margin-top: 5px;
         height: 28px; }
+      .paginaTienda .shop .tarjetas .contenedorProductos .btn, .paginaTienda .shop .tarjetas .tarjeta2 .btn {
+        background-color: red;
+        color: white;
+        border-color: white; }
 
 .ultimosIngresos :hover {
   -webkit-filter: grayscale(1);
