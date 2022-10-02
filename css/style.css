@@ -276,12 +276,13 @@ input {
   margin: 30px;
   width: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: row;
   /* CONTENEDOR PRODUCTOS*/ }
   .paginaTienda .shop .tarjetas {
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    justify-content: space-around; }
     .paginaTienda .shop .tarjetas .contenedorProductos, .paginaTienda .shop .tarjetas .tarjeta2 {
       width: 230px;
       display: flex;
@@ -298,13 +299,13 @@ input {
         align-content: center; }
         .paginaTienda .shop .tarjetas .contenedorProductos img:hover, .paginaTienda .shop .tarjetas .tarjeta2 img:hover {
           transform: scale(1.2); }
-      .paginaTienda .shop .tarjetas .contenedorProductos .nombreProductos, .paginaTienda .shop .tarjetas .tarjeta2 .nombreProductos, .paginaTienda .shop .tarjetas .contenedorProductos .tarjeta2 > h5, .paginaTienda .shop .tarjetas .tarjeta2 > h5 {
+      .paginaTienda .shop .tarjetas .contenedorProductos .h5, .paginaTienda .shop .tarjetas .tarjeta2 .h5 {
         display: flex;
-        justify-content: center;
+        align-content: center;
         color: #19191d;
         width: 227px;
         font-size: 20px; }
-        .paginaTienda .shop .tarjetas .contenedorProductos .nombreProductos a, .paginaTienda .shop .tarjetas .tarjeta2 .nombreProductos a, .paginaTienda .shop .tarjetas .contenedorProductos .tarjeta2 > h5 a, .paginaTienda .shop .tarjetas .tarjeta2 > h5 a {
+        .paginaTienda .shop .tarjetas .contenedorProductos .h5 a, .paginaTienda .shop .tarjetas .tarjeta2 .h5 a {
           text-decoration: none; }
       .paginaTienda .shop .tarjetas .contenedorProductos .precioProductos, .paginaTienda .shop .tarjetas .tarjeta2 .precioProductos, .paginaTienda .shop .tarjetas .contenedorProductos .tarjeta2 > span, .paginaTienda .shop .tarjetas .tarjeta2 > span {
         color: red;

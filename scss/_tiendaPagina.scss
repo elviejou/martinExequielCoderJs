@@ -70,7 +70,7 @@ input {
       margin: 30px;
       width: auto;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       flex-direction: row;
 
 
@@ -78,6 +78,8 @@ input {
     .tarjetas{
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-around;
+      
     
       
     .contenedorProductos { 
@@ -104,9 +106,9 @@ input {
       }
 
 
-      .nombreProductos { 
+      .h5 { 
         display: flex;
-        justify-content: center;
+        align-content: center;
         color:rgba(25.000000409781933, 25.000000409781933, 29.000000171363354, 1);
         width:227px;
         font-size:20px;

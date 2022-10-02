@@ -53,8 +53,9 @@
               </li>
               </div>
               </div>
+              <!-- BUSCADOR DE PRDUCTOS POR NOMBRE O CODIGO--> 
               <div class="buscadorProductos">
-                <input type="text" id="textoBuscar" class="form-control">
+                <input type="text" id="textoBuscar" class="form-control" placeholder="Buscar porductos por Nombre o Código">
                 <button class="btn btn-info" id="botonBuscar">Buscar</button>
               </div>
               <li class="nav-item">
@@ -79,9 +80,8 @@
          <section class="paginaTienda">
           <Section class="menuTienda">
             <section class="tituloTienda">
+              <h6 id="fechaActual"></h6>
               <h2 class="preciosConIva">TODOS LOS PRECIOS INCLUYEN IVA</h2>
-              <p class="preciosModificables">Los precios pueden modificarse sin previo aviso</p>
-              
             </section>
               
               <!-- FILTROS Y CATEGRIAS -->
@@ -124,6 +124,7 @@
                 </div>
               </div>
             </nav>
+            
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
@@ -138,6 +139,7 @@
                   <div class="modal-content" style="width: 540px;">
                     <div class="modal-header">
                       <h5 class="modal-title" id="exampleModalLabel">Carrito de Compras</h5> 
+                      
                       <h5 class="mb-3"><a href="./tienda.html" class="text-body"><i class="fas fa-long-arrow-alt-left me-2"></i>Seguir Comprando</a></h5>  
                     </div>  
                     <div class="modal-body" id="modal-body"></div>
@@ -156,10 +158,12 @@
             </div> 
       </section>  
     </main>
+    
         <!-- SECCION FOOTER -->    
         <footer class="footer container-fluid">
           <section class="footerContenedor">
               <span>© Copyright 2022 FRANPAPEL SRL - Todos los derechos reservados</span>
+              
               <div>
                   <i class="fa-brands fa-facebook" style="color: red;"></i>
                   <i class="fa-brands fa-instagram" style="color: red;"></i>
@@ -178,7 +182,10 @@
       <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
       <!--Toastify-->
       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+      <!--Luxon-->
+      <script src="https://cdn.jsdelivr.net/npm/luxon@2.3.0/build/global/luxon.min.js"></script>
       <script src="../main.js"></script>
+      
   </body>
 </body>
 </html>

@@ -1,4 +1,5 @@
-  
+
+
 //Clase consturctora 
 class Producto {
     constructor(id, descripcion, codigo, precio, imagen, categoria, cantidad){
@@ -38,15 +39,18 @@ let carritoConProductos = JSON.parse(localStorage.getItem("carritoConProductos")
 let tienda = []
 
 //CONSULTA SI HAY ALGO CARGADO EN STORAGE
-if(localStorage.getItem("tienda")){
-    tienda = JSON.parse(localStorage.getItem("tienda"))
-}
-else{
-    console.log("Seteando por primera vez el array")
-//INSERTA LOS PRODUCTOS DENTRO DEL ARRAY "TIENDA"
-tienda.push(producto1,producto2,producto3,producto4,producto5,producto6,producto7,producto8,producto9,producto10,producto11,producto12,producto13,producto14)
-localStorage.setItem("tienda", JSON.stringify(tienda) )
-}
+localStorage.getItem("tienda") ? tienda = JSON.parse(localStorage.getItem("tienda")) : (console.log("Seteando por primera vez el array"), tienda.push(producto1,producto2,producto3,producto4,producto5,producto6,producto7,producto8,producto9,producto10,producto11,producto12,producto13,producto14), localStorage.setItem("tienda", JSON.stringify(tienda) ))
+
+// if(localStorage.getItem("tienda")){
+//     tienda = JSON.parse(localStorage.getItem("tienda"))
+// }
+// else{
+//     console.log("Seteando por primera vez el array")
+// //INSERTA LOS PRODUCTOS DENTRO DEL ARRAY "TIENDA"
+// tienda.push(producto1,producto2,producto3,producto4,producto5,producto6,producto7,producto8,producto9,producto10,producto11,producto12,producto13,producto14)
+// localStorage.setItem("tienda", JSON.stringify(tienda) )
+// }
+
 //GENERA LAS CARDS DE LA PAGINA TIENDA
 let divProductosLibreria = document.getElementById("productosLibreria")
 tienda.forEach((producto)=>{
@@ -176,21 +180,22 @@ function cargarProductosEnCarrito(array){
                                                 <div style="width: 80px;">
                                                 <h5 class="mb-0">$${productoCarrito.precio}</h5>
                                                 </div>
-                                                <button id="btnEliminarProducto${productoCarrito.id}" ><i class="fas fa-trash-alt"></i></button>
+                                                <button id="btnEliminarProducto"><i class="fas fa-trash-alt"></i></button>
                                             </div>
                                         </div>
                                     </div>
                                 </div> `
 
 
-                                //ELIMINAR PRODUCTOS DEL CARRITO
-                                let btnEliminar =  document.getElementById(`btnEliminarProducto${productoCarrito.id}`)
+                                //ELIMINAR PRODUCTOS DEL CARRITO                              
+                                let btnEliminarProducto =  document.getElementById(`btnEliminarProducto`)
                                 let idProducto = productoCarrito.id
-                                btnEliminar.addEventListener("click",()=>{
+                                btnEliminarProducto.addEventListener("click", ()=>{
                                     let eliminar = carritoConProductos.findIndex(element => element.idProducto == idProducto)
                                     carritoConProductos.splice(eliminar,1)
                                     localStorage.setItem("carritoConProductos",JSON.stringify(carritoConProductos))
                                     cargarProductosEnCarrito(carritoConProductos)
+
                                     //POP UP MENSAJE PRODUCTO ELIMINADO
                                     Toastify({
                                         text: "Producto eliminado del Carrito",
@@ -258,7 +263,13 @@ function compraTotal(array){
                                 })
     }
 
+//FECHA T HORA
 
+const DateTime = luxon.DateTime
+const fechaActual = DateTime.now()
+let divFechaActual = document.getElementById("fechaActual")
+let fecha = fechaActual.toLocaleString(DateTime.DATE_FULL)
+divFechaActual.innerHTML = `${fecha}`
 
 
 
