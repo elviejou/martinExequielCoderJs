@@ -8,18 +8,12 @@ class Producto {
         this.precio = precio,
         this.imagen = imagen
     }
-    
-    //métodos
-    mostrarArticulos(){
-        console.log(  `ID: ${this.id}, Descripción: ${this.descripcion}, El código es ${this.codigo}, Precio es ${this.precio}, Cantidad ${this.cantidad}`)
-    }
-    
 }
 
 // //INSTANCIACION DE PRODUCTOS DESDE EL ARCHIVO  "productos.json"
 const cargarProductosEnTienda = async() =>{
-    const response = await fetch("../productos.json")
-    const atributoProducto = await response.json()
+    const respuesta = await fetch("../productos.json")
+    const atributoProducto = await respuesta.json()
     for (let producto of atributoProducto){
         let nuevoProducto = new Producto(producto.id, producto.descripcion, producto.codigo, producto.precio, producto.imagen)
         tienda.push(nuevoProducto)
@@ -54,9 +48,7 @@ tienda.forEach((producto)=>{
 
                             divProductosLibreria.append(productos)    
                             let btnAgregar =  document.getElementById(`agregarBtn${producto.id}`)  
-                            console.log(btnAgregar)
                             btnAgregar.addEventListener ("click", ()=>{
-                                console.log(producto)
                                 addToCart(producto)
                             }) 
 })
@@ -68,10 +60,7 @@ const botonBuscar = document.querySelector("#botonBuscar")
 const resultadoBusqueda = document.querySelector("#productosLibreria")
 
 const buscarProductos = ()=>{
-    console.log(textoBuscar.value)
-    
     productosLibreria.innerHTML = ""
-
     const textoProducto = textoBuscar.value.toLowerCase();
     const codigoProducto = textoBuscar.value.toLowerCase();
     for (let producto of tienda){
@@ -113,7 +102,6 @@ textoBuscar.addEventListener("keyup", buscarProductos)
 //FUNCION AGREGAR AL CARRITO
 function addToCart(producto){
     carritoConProductos.push(producto)
-    console.log(carritoConProductos)
     localStorage.setItem("carritoConProductos", JSON.stringify(carritoConProductos))
     //POP-UP MENSAJE AGREGADO AL CARRITO
     Toastify({
